@@ -36,7 +36,7 @@
   /* Font Weight Declaration */
   --za-fw-regular: 400;
   --za-fw-medium: 500;
-  --za-fw-semiBold: 700;
+  --za-fw-bold: 700;
   /*Font Size Declaration*/
   --za-fs-body: 16px;
   --za-fs-p: 16px;
@@ -3728,10 +3728,22 @@ html {
   }
 }
 
+/*Banner Area Style*/
 .za-banner-area {
   background: linear-gradient(180deg, #E0DEF7 0%, rgba(224, 222, 247, 0) 100%);
-  width: 100%;
-  height: 600px;
+}
+.za-banner-text {
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+.za-banner-text h1 {
+  font-weight: var(--za-fw-bold);
+  line-height: 110%;
+}
+.za-banner-text p {
+  font-weight: var(--za-fw-medium);
+  font-size: 20px;
+  line-height: 170%;
 }
 
 /*# sourceMappingURL=style.css.map */

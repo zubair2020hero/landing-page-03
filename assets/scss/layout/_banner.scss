@@ -1,0 +1,24 @@
+@use '../helper'as *;
+
+/*Banner Area Style*/
+
+.za-banner{
+    &-area {
+        background: linear-gradient(180deg, #E0DEF7 0%, rgba(224, 222, 247, 0.00) 100%);
+        // width: 100%;
+        // height: 600px;        
+    }
+    &-text{
+        padding-top:150px;
+        padding-bottom: 60px;
+        & h1{
+            font-weight: var(--za-fw-bold);
+            line-height: 110%;
+        }
+        & p{
+            font-weight: var(--za-fw-medium);
+            font-size:20px;
+            line-height: 170%;
+        }
+    }
+}
