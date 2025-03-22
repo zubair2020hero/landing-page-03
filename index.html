@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/meanmenu.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -91,26 +91,285 @@
     <!-- Header Area End -->
 
     <!-- Banner Area End -->
-    <section class="za-banner-area">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-10">
-                    <div class="za-banner-text">
-                        <h1>Buy, rent, or sell <br> your property <br> easily</h1>
-                        <p class="pt-20">A great platform to buy, sell, or even rent your <br> properties without any commisions.</p>
-                        <div class="za-tab-btn">
-                            <button>Rent</button>
-                            <button>Buy</button>
-                            <button>Sell</button>
+    <section class="za-banner-area position-relative">
+        <div class="za-banner-img" data-bg-img="assets/img/banner/bg.png">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-12">
+                        <div class="za-banner-content">
+                            <div class="za-banner-title">
+                                <h1>Buy, rent, or sell <br> your property <br> easily</h1>
+                                <p class="pt-30">
+                                    A great platform to buy, sell, or even rent your <br> properties without
+                                    any commisions.
+                                </p>
+                            </div>
+                            <div class="za-banner-tab">
+                                <!-- Nav tabs -->
+                                <nav>
+                                    <div class="nav za-nav-tabs" id="myTab" role="tablist">
+                                        <button class="za-nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">Rent</button>
+                                        <button class="za-nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                            aria-selected="false">Buy</button>
+                                        <button class="za-nav-link" id="messages-tab" data-bs-toggle="tab"
+                                            data-bs-target="#messages" type="button" role="tab" aria-controls="messages"
+                                            aria-selected="false">Sell</button>
+                                    </div>
+                                </nav>
+                                <!-- Tab panes -->
+                                <div class="tab-content za-tab-content">
+                                    <div class="tab-pane za-tab-pane active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab" tabindex="0">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="za-location">
+                                                    <span class="location-lavel">Location</span>
+                                                    <div class="za-select-wrapper">
+                                                        <div class="select-btn">
+                                                            <span>Barcelona, Spain</span>
+                                                            <!-- <i class="fas fa-chevron-down"></i> -->
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="search">
+                                                                <i class="fas fa-search"></i>
+                                                                <input type="text" placeholder="Search">
+                                                            </div>
+                                                            <ul class="options">
+                                                                <!-- <li>Australia</li>                                                         -->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="za-datepicker">
+                                                    <span class="datepicker-lavel">When</span>
+                                                    <div class="datepicker-container">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="text" id="datepicker-1"
+                                                                class="datepicker-input"
+                                                                placeholder="Select Move-in Date" readonly>
+                                                            <i class="fa-regular fa-calendar"></i>
+                                                        </div>
+                                                        <div id="calendar-1" class="calendar">
+                                                            <div class="calendar-header">
+                                                                <span id="prev-month-1"
+                                                                    class="nav-button">&#10094;</span>
+                                                                <span id="month-year-1" class="month-year">March
+                                                                    2025</span>
+                                                                <span id="next-month-1"
+                                                                    class="nav-button">&#10095;</span>
+                                                            </div>
+                                                            <div class="calendar-days">
+                                                                <!-- Days will be injected by jQuery -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="za-tab-btn">
+                                                    <a href="#" class="btn02">Browse Properties</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane za-tab-pane" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab" tabindex="0">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="za-location">
+                                                    <span class="location-lavel">Location</span>
+                                                    <div class="za-select-wrapper">
+                                                        <div class="select-btn">
+                                                            <span>Barcelona, Spain</span>
+                                                            <!-- <i class="fas fa-chevron-down"></i> -->
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="search">
+                                                                <i class="fas fa-search"></i>
+                                                                <input type="text" placeholder="Search">
+                                                            </div>
+                                                            <ul class="options">
+                                                                <!-- <li>Australia</li> -->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="za-datepicker">
+                                                    <span class="datepicker-lavel">When</span>
+                                                    <div class="datepicker-container">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="text" id="datepicker-2"
+                                                                class="datepicker-input"
+                                                                placeholder="Select Move-in Date" readonly>
+                                                            <i class="fa-regular fa-calendar"></i>
+                                                        </div>
+                                                        <div id="calendar-2" class="calendar">
+                                                            <div class="calendar-header">
+                                                                <span id="prev-month-2"
+                                                                    class="nav-button">&#10094;</span>
+                                                                <span id="month-year-2" class="month-year">March
+                                                                    2025</span>
+                                                                <span id="next-month-2"
+                                                                    class="nav-button">&#10095;</span>
+                                                            </div>
+                                                            <div class="calendar-days">
+                                                                <!-- Days will be injected by jQuery -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="za-tab-btn">
+                                                    <a href="#" class="btn02">Browse Properties</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane za-tab-pane" id="messages" role="tabpanel"
+                                        aria-labelledby="messages-tab" tabindex="0">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="za-location">
+                                                    <span class="location-lavel">Location</span>
+                                                    <div class="za-select-wrapper">
+                                                        <div class="select-btn">
+                                                            <span>Barcelona, Spain</span>
+                                                            <!-- <i class="fas fa-chevron-down"></i> -->
+                                                        </div>
+                                                        <div class="content">
+                                                            <div class="search">
+                                                                <i class="fas fa-search"></i>
+                                                                <input type="text" placeholder="Search">
+                                                            </div>
+                                                            <ul class="options">
+                                                                <!-- <li>Australia</li>                                               -->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="za-datepicker">
+                                                    <span class="datepicker-lavel">When</span>
+                                                    <div class="datepicker-container">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="text" id="datepicker-2"
+                                                                class="datepicker-input"
+                                                                placeholder="Select Move-in Date" readonly>
+                                                            <i class="fa-regular fa-calendar"></i>
+                                                        </div>
+                                                        <div id="calendar-3" class="calendar">
+                                                            <div class="calendar-header">
+                                                                <span id="prev-month-3"
+                                                                    class="nav-button">&#10094;</span>
+                                                                <span id="month-year-3" class="month-year">March
+                                                                    2025</span>
+                                                                <span id="next-month-3"
+                                                                    class="nav-button">&#10095;</span>
+                                                            </div>
+                                                            <div class="calendar-days">
+                                                                <!-- Days will be injected by jQuery -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4">
+                                                <div class="za-tab-btn">
+                                                    <a href="#" class="btn02">Browse Properties</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="za-banner-numbers d-flex mt-52">
+                                <div class="number-item">
+                                    <div class="za-icon-container">
+                                        <img src="assets/img/banner/main_Icon.png" class="za-main-icon" alt="icon">
+                                        <img src="assets/img/banner/sub_Icon.png" class="za-overlay-icon" alt="icon">
+                                    </div>
+                                    <h4 class="mt-24">50k+ renters</h4>
+                                    <p>believe in our service</p>
+                                </div>
+
+                                <div class="number-item">
+                                    <div class="za-icon-container">
+                                        <img src="assets/img/banner/main_Icon2.png" class="za-main-icon" alt="icon">
+                                        <img src="assets/img/banner/sub_Icon2.png" class="za-overlay-icon" alt="icon">
+                                    </div>
+                                    <h4 class="mt-24">10k+ properties</h4>
+                                    <p>and house ready for occupancy</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                    <!-- <div class="col-lg-3"></div> -->
                 </div>
-                <div class="col-lg-2"></div>
             </div>
         </div>
-    </section>  
+        <div class="za-banner-testimonial">
+            <div class="za-testimonial-top d-flex">
+                <img src="assets/img/banner/testimonial/client.png" alt="Client Img" width="64" height="64"
+                    class="client">
+                <div class="top-text">
+                    <h6>Manuel Villa</h6>
+                    <p>Renter</p>
+                    <div class="top-moved d-flex align-items-center">
+                        <p>Moved with</p>
+                        <img class="logo" src="assets/img/banner/testimonial/logo.png" alt="logo" width="65"
+                            height="16">
+                    </div>
+                </div>
+            </div>
+            <div class="za-testimonial-middle d-flex">
+                <img src="assets/img/banner/testimonial/comma_Icon.png" alt="#" width="32" height="32">
+                <p>I loved how smooth the move was, and finally got the house we wanted.</p>
+            </div>
+            <div class="za-line"></div>
+            <div class="za-testimonial-bottom d-flex">
+                <div class="item">
+                    <h2>$1,500</h2>
+                    <p>Saved up to</p>
+                </div>
+                <div class="item">
+                    <h2>-24 hrs</h2>
+                    <p>Process time</p>
+                </div>
+            </div>
+        </div>
+        <div class="za-banner-trustpilot text-white">
+            <div class="d-flex align-content-center justify-content-between">
+                <h6 class="text-white m-0">Excellent</h6>
+                <img src="assets/img/banner/trustpilot/trustpilot.png" alt="">
+            </div>
+            <div class="za-star-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-white">From 3,264 reviews</p>
+        </div>
+    </section>
     <!-- Banner Area End -->
-
+    <img src="assets/img/banner/bg.png" class="za-re-img" alt="">
     <!-- Footer Area End -->
     <!-- Footer Area End -->
 
@@ -119,7 +378,6 @@
     <script src="assets/js/meanmenu.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/slick.js"></script>
-
     <!-- Theme js -->
     <script src="assets/js/main.js"></script>
 </body>

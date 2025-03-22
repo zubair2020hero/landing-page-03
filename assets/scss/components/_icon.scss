@@ -1,0 +1,14 @@
+.za-icon-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+
+    & .za-overlay-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

@@ -2,23 +2,403 @@
 
 /*Banner Area Style*/
 
-.za-banner{
-    &-area {
-        background: linear-gradient(180deg, #E0DEF7 0%, rgba(224, 222, 247, 0.00) 100%);
-        // width: 100%;
-        // height: 600px;        
+.za-banner {
+  &-area {
+    background: linear-gradient(180deg, #E0DEF7 0%, rgba(224, 222, 247, 0.00) 100%);
+    // width: 100%;
+    // height: 600px;        
+  }
+
+  &-img {
+    background-size: 670px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    // @media #{$xxl} {
+    //   background-size: 654px;
+    // }
+
+    // @media #{$xxxl} {
+    //   background-size: 754px;
+    // }
+  }
+
+  &-content {
+    padding-top: 185px;
+    padding-bottom: 34px;
+  }
+
+  &-title {
+    & h1 {
+      font-weight: var(--za-fw-bold);
+      line-height: 110%;
     }
-    &-text{
-        padding-top:150px;
-        padding-bottom: 60px;
-        & h1{
+
+    & p {
+      font-weight: var(--za-fw-medium);
+      font-size: 20px;
+      line-height: 170%;
+    }
+  }
+
+  &-tab {
+    & .za-nav-tabs {
+      width: 297px;
+      background-color: var(--za-cr-common-white);
+      border-radius: 8px 8px 0 0;
+      border-bottom: 1px solid var(--za-cr-common-purple);
+    }
+
+    & .za-nav-link {
+      padding: 15px 32px;
+      font-weight: var(--za-fw-medium);
+      font-size: 18px;
+
+      &.active {
+        color: var(--za-cr-theme-primary);
+        font-weight: var(--za-fw-bold);
+        border-bottom: 4px solid blue;
+      }
+    }
+
+    & .za-tab-content {
+      background-color: var(--za-cr-common-white);
+      padding: 24px 20px;
+      box-shadow: -24px 32px 40px #0009290D;
+      border-radius: 0px 8px 8px 8px;
+      width: 72%;
+
+      // @media #{$xxxl} {
+      //   width: 72%;
+      // }
+      & .za-tab-pane {
+        // background-color: var(--za-cr-common-purple);
+      }
+    }
+
+    //-- location
+    & .za-location {
+      border-right: 1px solid #E0DEF7;
+    }
+
+    & .za-select-wrapper {
+      // width: 370px;
+      width: 100%;
+      position: relative;
+
+      & .select-btn {
+        & span {
+          color: var(--za-cr-text-black);
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+
+      & .content {
+        position: absolute;
+        width: 300px;
+        display: none;
+        padding: 20px;
+        margin-top: 15px;
+        border-radius: 7px;
+        background: var(--za-cr-common-white);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+        z-index: 1;
+
+        & .search {
+          position: relative;
+
+          & i {
+            font-size: 20px;
+            position: absolute;
+            line-height: 53px;
+            left: 15px;
+          }
+
+          & input {
+            height: 53px;
+            width: 100%;
+            outline: none;
+            font-size: 17px;
+            border-radius: 5px;
+            padding: 0 15px 0 43px;
+            border: 1px solid #b3b3b3;
+          }
+        }
+
+        & .options {
+          margin-top: 10px;
+          max-height: 250px;
+          overflow-y: auto;
+          padding-left: 5px;
+
+          &::-webkit-scrollbar {
+            width: 7px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 25px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 25px;
+          }
+
+          & li {
+            padding: 8px 12px;
+            margin-right: 6px;
+            font-size: 18px;
+            border-radius: 5px;
+
+            &:hover,
+            &.selected {
+              color: #222;
+              background: #f2f2f2;
+            }
+          }
+        }
+      }
+
+      &.active {
+        & .content {
+          display: block;
+        }
+      }
+    }
+
+    //-- datepicker
+    & .za-datepicker {
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #E0DEF7;
+    }
+
+    // DatePicker Container 
+    & .datepicker-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    & .datepicker-input {
+      width: 84%;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+
+      &::placeholder {
+        color: var(--za-cr-text-black);
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    // Calendar Styling
+    & .calendar {
+      display: none;
+      position: absolute;
+      top: 44px;
+      left: 0;
+      // width: 250px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+      z-index: 10;
+    }
+
+    & .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #3f51b5;
+      color: white;
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    & .nav-button {
+      cursor: pointer;
+      font-size: 20px;
+      user-select: none;
+    }
+
+    & .month-year {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    & .calendar-days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      padding: 10px;
+    }
+
+    & .calendar-days {
+      & span {
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    & .selected {
+      background-color: #3f51b5;
+      color: white;
+      border-radius: 50%;
+    }
+
+    & .today {
+      background-color: #ff5722;
+      color: white;
+      border-radius: 50%;
+    }
+
+    & .empty {
+      background-color: transparent;
+      pointer-events: none;
+    }
+
+    //-- Tab button
+    & .za-tab-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &-numbers {
+    gap: 78px;
+
+    & .number-item {
+      & h4 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.24px;
+        color: #7065F0;
+      }
+
+      & p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #000929;
+      }
+    }
+  }
+
+  &-testimonial {
+    position: absolute;
+    top: 200px;
+    left: 680px;
+    width: 270px;
+    // height: 285px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+
+    & .za-testimonial {
+      &-top {
+        margin: 0;
+        gap: 16px;
+
+        & .client {
+          border-radius: 50px;
+        }
+
+        & .top-text {
+          & h6 {
+            font-size: 16px;
             font-weight: var(--za-fw-bold);
-            line-height: 110%;
-        }
-        & p{
+          }
+
+          & p {
+            margin: -8px 0 -4px 0;
+            font-size: 12px;
             font-weight: var(--za-fw-medium);
-            font-size:20px;
-            line-height: 170%;
+            color: #000929;
+            opacity: 0.5;
+          }
+
+          & .top-moved {
+            gap: 8px;
+
+            & p {
+              margin: 0;
+            }
+          }
         }
+
+      }
+
+      &-middle {
+        margin: 24px 0;
+        gap: 16px;
+
+        & p {
+          margin: -8px 0 -4px 0;
+          font-size: 12px;
+          font-weight: var(--za-fw-medium);
+          color: #000929;
+          line-height: 22.2px;
+        }
+      }
+
+      &-bottom {
+        margin-top: 24px;
+        gap: 70px;
+
+        & .item {
+          & h2 {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 100%;
+          }
+
+          & p {
+            margin: -10px 0 0 0;
+            font-size: 12px;
+            font-weight: var(--za-fw-medium);
+            color: #000929;
+            opacity: 0.5;
+          }
+        }
+      }
     }
+
+    & .za-line {
+      width: 100%;
+      height: 1px;
+      background-color: #E5E5E5;
+    }
+  }
+
+  &-trustpilot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 260px;
+    height: 156px;
+    background-color: #000929;
+    border-radius: 8px 0 0 0;
+    padding: 24px;
+    & .za-star-icon{
+      margin: 5px 0 20px 0;
+      & i{
+        color: #FFB154;
+      }
+    }
+    & p{
+      font-size: 14px;
+    }
+  }
 }
