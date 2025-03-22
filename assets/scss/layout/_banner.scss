@@ -42,6 +42,7 @@
   }
 
   &-tab {
+   
     & .za-nav-tabs {
       width: 297px;
       background-color: var(--za-cr-common-white);
@@ -67,18 +68,42 @@
       box-shadow: -24px 32px 40px #0009290D;
       border-radius: 0px 8px 8px 8px;
       width: 72%;
-
+      position: relative;
       // @media #{$xxxl} {
       //   width: 72%;
       // }
       & .za-tab-pane {
+        // position: relative;
+        // &::before{
+        //   position: absolute;
+        //   content: "";
+        //   width: 3px;
+        //   height: 10px;
+        //   background-color: green;
+        // }
         // background-color: var(--za-cr-common-purple);
       }
+      & .tab-line {
+        position: absolute;
+        width: 2px;
+        height: 45px;
+        background-color: #E0DEF7;
+        top: 30%;
+        left: 30%;
+      }
+      & .tab-line2 {
+        position: absolute;
+        width: 2px;
+        height: 45px;
+        background-color: #E0DEF7;
+        top: 30%;
+        left: 66%;
+      }
     }
-
+    
     //-- location
     & .za-location {
-      border-right: 1px solid #E0DEF7;
+      // border-right: 1px solid #E0DEF7;
     }
 
     & .za-select-wrapper {
@@ -173,7 +198,7 @@
     & .za-datepicker {
       display: flex;
       flex-direction: column;
-      border-right: 1px solid #E0DEF7;
+      // border-right: 1px solid #E0DEF7;
     }
 
     // DatePicker Container 
@@ -355,7 +380,6 @@
 
       &-bottom {
         margin-top: 24px;
-        gap: 70px;
 
         & .item {
           & h2 {
@@ -391,14 +415,24 @@
     background-color: #000929;
     border-radius: 8px 0 0 0;
     padding: 24px;
-    & .za-star-icon{
+
+    & .za-star-icon {
       margin: 5px 0 20px 0;
-      & i{
+
+      & i {
         color: #FFB154;
       }
     }
-    & p{
+
+    & p {
       font-size: 14px;
+    }
+
+    & .shape {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
     }
   }
 }

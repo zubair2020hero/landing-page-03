@@ -3806,9 +3806,23 @@ html {
   box-shadow: -24px 32px 40px rgba(0, 9, 41, 0.0509803922);
   border-radius: 0px 8px 8px 8px;
   width: 72%;
+  position: relative;
 }
-.za-banner-tab .za-location {
-  border-right: 1px solid #E0DEF7;
+.za-banner-tab .za-tab-content .tab-line {
+  position: absolute;
+  width: 2px;
+  height: 45px;
+  background-color: #E0DEF7;
+  top: 30%;
+  left: 30%;
+}
+.za-banner-tab .za-tab-content .tab-line2 {
+  position: absolute;
+  width: 2px;
+  height: 45px;
+  background-color: #E0DEF7;
+  top: 30%;
+  left: 66%;
 }
 .za-banner-tab .za-select-wrapper {
   width: 100%;
@@ -3882,7 +3896,6 @@ html {
 .za-banner-tab .za-datepicker {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #E0DEF7;
 }
 .za-banner-tab .datepicker-container {
   position: relative;
@@ -4024,7 +4037,6 @@ html {
 }
 .za-banner-testimonial .za-testimonial-bottom {
   margin-top: 24px;
-  gap: 70px;
 }
 .za-banner-testimonial .za-testimonial-bottom .item h2 {
   font-size: 20px;
@@ -4061,6 +4073,12 @@ html {
 }
 .za-banner-trustpilot p {
   font-size: 14px;
+}
+.za-banner-trustpilot .shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
