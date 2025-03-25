@@ -1,20 +1,20 @@
 (function ($) {
     "use strict";
 
-    // Header Mainmenu [active]
+    //---------- Header Mainmenu [active]
     $(".za-header-mainmunu ul li").click(function () {
         $(".za-header-mainmunu ul li").removeClass("active");
         $(this).addClass("active");
     });
 
-    // Header btn [active]
+    //---------- Header btn [active]
     $(".za-header-btn .btn01").click(function (e) {
         e.preventDefault();
         $(".za-header-btn .btn01").removeClass("active");
         $(this).addClass("active");
     });
 
-    // Header Sticky
+    //---------- Header Sticky
     if ($("#za-header-area").length > 0) {
         $(window).on("scroll", function (event) {
             var scroll = $(window).scrollTop();
@@ -26,14 +26,14 @@
         });
     }
 
-    // Mobile Menu
+    //---------- Mobile Menu
     $('#mobile-menu').meanmenu({
         meanMenuContainer: '.mobile-menu',
         meanScreenWidth: "991",
         meanExpand: ['<i class="fa-solid fa-plus"></i>'],
     });
 
-    // Sidebar Js
+    //---------- Sidebar Js [Menu]
     $(".za-header-toggle").on("click", function () {
         $(".za-sidebar-menu").addClass("sidebar-opened");
         $(".body-overlay").addClass("opened");
@@ -48,7 +48,7 @@
         $(".za-sidebar-menu").removeClass("sidebar-opened");
         $(".body-overlay").removeClass("opened");
     });
-    //--------Location start
+    //-------- Location start
     const wrapper = $(".za-select-wrapper"),
         selectBtn = wrapper.find(".select-btn"),
         searchInp = wrapper.find("input"),
@@ -101,8 +101,10 @@
         }
     });
 
-    //--------Location end
-    //--------Date start  we are initializing the calendar popup
+    //-------- Location end
+    
+    //-------- Datepicker start
+    // Date start  we are initializing the calendar popup
     $('.datepicker-input').each(function (index) {
         let currentDate = new Date();
         let selectedDate = null;
@@ -182,15 +184,14 @@
         });
     });
 
-    //----------Date End
-    //------------------
-    
-    // data bg img 
+    //---------- Datepicker End
+
+    //---------- data bg img 
     $("[data-bg-img]").each(function () {
         $(this).css("background-image", "url(" + $(this).attr("data-bg-img") + ")")
     })
 
-    // 03. Testimonial
+    //---------- Testimonial
     $('.testimonial-active').slick({
         // dots: true,
         infinite: true,
@@ -201,7 +202,7 @@
         nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>',
     });
 
-    //04. Faq
+    //---------- Faq
     $(".za-faq-text li").on("click", function (e) {
         let clickedLi;
         if ($(e.target).hasClass("za-question-arrow")) {

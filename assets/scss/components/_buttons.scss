@@ -1,8 +1,8 @@
-@use '../helper' as *;
+@use '../helper'as *;
 
 /*Button Style*/
 
-.btn01 {          
+.btn01 {
     padding: 12px 24px;
     border-radius: 8px;
     margin-left: 12px;
@@ -10,20 +10,21 @@
     color: var(--za-cr-text-black);
     border: 2px solid var(--za-cr-common-purple);
     @include transition(0.3s);
+
     &:hover {
         background-color: var(--za-cr-theme-primary);
         color: var(--za-cr-common-white);
         border: 2px solid transparent;
     }
 
-    &.active { 
+    &.active {
         background-color: var(--za-cr-theme-primary);
         color: var(--za-cr-common-white);
         border: 2px solid transparent;
     }
 }
 
-.btn02 {          
+.btn02 {
     padding: 16px 32px;
     border-radius: 8px;
     margin-left: 12px;
@@ -33,6 +34,25 @@
     border: 2px solid transparent;
     background-color: var(--za-cr-theme-primary);
     @include transition(0.3s);
+
+    &:hover {
+        color: var(--za-cr-text-black);
+        background-color: transparent;
+        border: 2px solid var(--za-cr-common-purple);
+    }
+}
+
+.btn03 {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--za-cr-common-white);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: #100A55;
+    @include transition(0.3s);
+
     &:hover {
         color: var(--za-cr-text-black);
         background-color: transparent;

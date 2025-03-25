@@ -1,0 +1,60 @@
+@use '../helper'as *;
+
+/*Benefit Area Style*/
+
+.za-benefit {
+    &-area {
+        background: var(--Main-Color-White, #FFF);
+        box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.20);
+    }
+
+    &-box {}
+
+    &-left {
+        // width: 416px;
+        width: 26.00rem;
+        height: 500px;
+        border-radius: 8px;
+        border: 1.5px solid #E0DEF7;
+        background: #F7F7FD;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+
+        & .benefit-text {
+            padding: 40px 67px 0 40px;
+
+            & h3 {
+                color: #100A55;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 1.25;
+            }
+
+            & p {
+                color: #100A55;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.6;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &-right {
+        & .benefit-item {
+            & h4 {
+              font-size: 24px;
+              font-weight: 700;
+              letter-spacing: -0.24px;
+              color: #000929;
+            }
+      
+            & p {
+              font-size: 16px;
+              font-weight: 400;
+              color: #4D5461;
+            }
+          }
+    }
+}

@@ -3302,26 +3302,32 @@
   border: 2px solid var(--za-cr-common-purple);
 }
 
+.btn03 {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--za-cr-common-white);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #100A55;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.btn03:hover {
+  color: var(--za-cr-text-black);
+  background-color: transparent;
+  border: 2px solid var(--za-cr-common-purple);
+}
+
 /*****Reuse Class*****/
 /*Section tite*/
-.za-section-top {
-  font-weight: var(--za-fw-medium);
-}
-
-.za-section-title {
-  font-size: 48px;
-  font-weight: var(--za-fw-semiBold);
-  color: var(--za-cr-darkBlue);
-  margin-bottom: 20px;
-}
-@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 300px) and (max-width: 750px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .za-section-title {
-    font-size: 35px;
-  }
-}
-
 .za-section-p {
-  color: var(--za-cr-darkBlue);
+  margin-top: 12px;
+  opacity: 0.7;
 }
 
 .za-icon-container {
@@ -3777,12 +3783,12 @@ html {
 }
 .za-banner-title h1 {
   font-weight: var(--za-fw-bold);
-  line-height: 110%;
+  line-height: 1.1;
 }
 .za-banner-title p {
   font-weight: var(--za-fw-medium);
   font-size: 20px;
-  line-height: 170%;
+  line-height: 1.7;
 }
 .za-banner-tab .za-nav-tabs {
   width: 297px;
@@ -3851,7 +3857,7 @@ html {
 .za-banner-tab .za-select-wrapper .content .search i {
   font-size: 20px;
   position: absolute;
-  line-height: 53px;
+  line-height: 3.3125;
   left: 15px;
 }
 .za-banner-tab .za-select-wrapper .content .search input {
@@ -4033,7 +4039,7 @@ html {
   font-size: 12px;
   font-weight: var(--za-fw-medium);
   color: #000929;
-  line-height: 22.2px;
+  line-height: 1.3875;
 }
 .za-banner-testimonial .za-testimonial-bottom {
   margin-top: 24px;
@@ -4041,7 +4047,7 @@ html {
 .za-banner-testimonial .za-testimonial-bottom .item h2 {
   font-size: 20px;
   font-weight: 800;
-  line-height: 100%;
+  line-height: 1;
 }
 .za-banner-testimonial .za-testimonial-bottom .item p {
   margin: -10px 0 0 0;
@@ -4079,6 +4085,182 @@ html {
   right: 0;
   bottom: 0;
   overflow: hidden;
+}
+
+/*Benefit Area Style*/
+.za-benefit-area {
+  background: var(--Main-Color-White, #FFF);
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+}
+.za-benefit-left {
+  width: 26rem;
+  height: 500px;
+  border-radius: 8px;
+  border: 1.5px solid #E0DEF7;
+  background: #F7F7FD;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.za-benefit-left .benefit-text {
+  padding: 40px 67px 0 40px;
+}
+.za-benefit-left .benefit-text h3 {
+  color: #100A55;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.za-benefit-left .benefit-text p {
+  color: #100A55;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+.za-benefit-right .benefit-item h4 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  color: #000929;
+}
+.za-benefit-right .benefit-item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4D5461;
+}
+
+/*Property Area Style*/
+.za-property-area {
+  background: linear-gradient(180deg, #FFF 0%, #F0EFFB 100%);
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+}
+.za-property-content .za-nav-pills {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1.5px solid #E0DEF7;
+  background: #F0EFFB;
+}
+.za-property-content .za-nav-pills .za-nav-link {
+  display: block;
+  padding: 11px 22px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #100A55;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  border: 2px solid transparent;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.za-property-content .za-nav-pills .za-nav-link svg {
+  margin-right: 8px;
+}
+.za-property-content .za-nav-pills .za-nav-link.active, .za-property-content .za-nav-pills .za-nav-link.show {
+  color: #7065F0;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 2px solid #E0DEF7;
+  background: #FFF;
+  box-shadow: 0px 3px 40px 0px rgba(14, 8, 84, 0.05);
+  opacity: 1;
+}
+.za-property-content .za-nav-pills .za-nav-link.active svg, .za-property-content .za-nav-pills .za-nav-link.show svg {
+  margin-right: 8px;
+  opacity: 1;
+}
+.za-property-content .za-nav-pills .za-nav-link.active svg path, .za-property-content .za-nav-pills .za-nav-link.show svg path {
+  stroke: #7065F0;
+}
+.za-property-content form .form-control {
+  width: 352px;
+  padding: 22px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000929;
+  background: #F0EFFB;
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+}
+.za-property-content form .form-control::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.5;
+  color: #000929;
+}
+.za-property-content form .fa-icon {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  opacity: 0.5;
+  font-size: 16px;
+  color: #000929;
+}
+.za-property-content .za-tab-content .za-card-item {
+  width: 352px;
+  height: 424px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1.5px solid var(--Shades-of-Purple-Purple-96, #F0EFFB);
+  background: var(--Main-Color-White, #FFF);
+}
+.za-property-content .za-tab-content .za-card-img {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px 8px 0px 0px;
+}
+.za-property-content .za-tab-content .za-card-img img {
+  width: 352px;
+  transition: all 0.4s ease 0s;
+}
+.za-property-content .za-tab-content .za-card-img:hover img {
+  transform: scale(1.2);
+}
+.za-property-content .za-tab-content .za-card-text {
+  padding: 32px 24px;
+}
+.za-property-content .za-tab-content .za-card-text .za-price h6 {
+  color: #7065F0;
+  font-size: 24px;
+  font-weight: 800;
+}
+.za-property-content .za-tab-content .za-card-text .za-price h6 span {
+  color: #000929;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.za-property-content .za-tab-content .za-card-text h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.za-property-content .za-tab-content .za-card-text p {
+  color: #000929;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.za-property-content .za-tab-content .za-card-text .za-line {
+  width: 100%;
+  height: 1.5px;
+  background-color: #F0EFFB;
+}
+.za-property-content .za-tab-content .za-card-text .za-facilities {
+  gap: 16px;
+}
+.za-property-content .za-tab-content .za-card-text .za-facilities li {
+  padding-top: 12px;
+}
+.za-property-content .za-tab-content .za-card-text .za-facilities li span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000929;
+  opacity: 0.7;
+  padding-left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

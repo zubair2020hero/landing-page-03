@@ -31,13 +31,13 @@
   &-title {
     & h1 {
       font-weight: var(--za-fw-bold);
-      line-height: 110%;
+      line-height: 1.1;
     }
 
     & p {
       font-weight: var(--za-fw-medium);
       font-size: 20px;
-      line-height: 170%;
+      line-height: 1.7;
     }
   }
 
@@ -137,7 +137,7 @@
           & i {
             font-size: 20px;
             position: absolute;
-            line-height: 53px;
+            line-height: 3.3125;
             left: 15px;
           }
 
@@ -374,7 +374,7 @@
           font-size: 12px;
           font-weight: var(--za-fw-medium);
           color: #000929;
-          line-height: 22.2px;
+          line-height: 1.3875;
         }
       }
 
@@ -385,7 +385,7 @@
           & h2 {
             font-size: 20px;
             font-weight: 800;
-            line-height: 100%;
+            line-height: 1;
           }
 
           & p {
