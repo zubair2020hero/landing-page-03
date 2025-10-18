@@ -33,12 +33,8 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--za-ff-body);
-    font-size: var(--za-fs-body);
-    font-weight: normal;
-    color: var(--za-cr-text-black);
-    line-height: 28px;
+li {
+    list-style: none;
 }
 
 a {
@@ -46,69 +42,12 @@ a {
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--za-ff-heading);
-    color: var(--za-cr-text-black);
-    margin-top: 0px;
-    font-weight: 700;
-    line-height: 1;
-    // letter-spacing: -2px;
-
-    @media #{$xs} {
-        letter-spacing: -1px;
-    }
-}
-
-h1 {
-    font-size: var(--za-fs-h1);
-}
-
-h2 {
-    font-size: var(--za-fs-h2);
-}
-
-h3 {
-    font-size: var(--za-fs-h3);
-}
-
-h4 {
-    font-size: var(--za-fs-h4);
-}
-
-h5 {
-    font-size: var(--za-fs-h5);
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    font-family: var(--za-ff-p);
-    font-size: var(--za-fs-p);
-    font-weight: var(--za-fw-regular);
-    color: var(--za-cr-text-black);
-    margin-bottom: 15px;
-    line-height: 28px;
-}
-
-li {
-    list-style: none;
-}
-
-
-
 textarea,
 input,
 button {
     background: none;
     border: none;
+    font: inherit;
 }
 
 input {
@@ -124,7 +63,12 @@ html {
     scroll-behavior: smooth;
 }
 
-
+body {
+    background-color: var(--za-cr-white);
+    color: var(--za-cr-darkBlue);
+    font-size: var(--za-fs-body);
+    font-family: var(--za-ff-body);
+}
 
 /*****Reuse Class*****/
 
@@ -132,4 +76,13 @@ html {
     width: 100%;
     display: block;
     object-fit: cover;
+}
+
+.za-container {
+    max-width: 1170px;
+}
+
+// font family
+.za-google-sans-code{
+    font-family: var(--za-ff-2);
 }
