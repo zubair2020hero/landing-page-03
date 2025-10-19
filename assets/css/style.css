@@ -3365,8 +3365,31 @@ body {
   max-width: 1170px;
 }
 
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
 .za-google-sans-code {
   font-family: var(--za-ff-2);
+}
+
+img.za-hero-shape-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: 700px;
+}
+
+.za-header-transparent {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
 }
 
 /***** Menu Style *****/
@@ -3492,6 +3515,9 @@ body {
 }
 
 /*--Header Area--*/
+.za-header-area {
+  z-index: 99999;
+}
 .za-header-row {
   gap: 200px;
 }

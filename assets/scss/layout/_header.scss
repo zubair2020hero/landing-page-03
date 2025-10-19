@@ -2,6 +2,9 @@
 
 /*--Header Area--*/
 .za-header {
+    &-area{
+        z-index: 99999;
+    }
     &-row {
         gap: 200px;
     }
