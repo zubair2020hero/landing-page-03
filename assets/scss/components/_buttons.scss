@@ -6,3 +6,11 @@
     padding: 8px 22px;
     border: 2px solid transparent;
 }
+
+.za-play-btn {
+    gap: 20px;
+    & span {
+        font-weight: var(--za-fw-medium);
+        color: var(--za-cr-common-black);
+    }
+}

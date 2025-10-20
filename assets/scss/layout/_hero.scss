@@ -1,0 +1,78 @@
+@use '../helper'as *;
+
+/*--Hero Area--*/
+
+.za-hero {
+    &-row {
+        position: relative;
+        padding-top: 108px;
+        z-index: 9999;
+        gap: 8px;
+    }
+
+    &-shape {
+        &-1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45%;
+        }
+
+        &-2 {
+            position: absolute;
+            top: -36%;
+            left: -28%;
+            width: 45%;
+        }
+    }
+
+    &-sub-title {
+        font-family: var(--za-ff-body);
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--za-cr-theme-terraCotta);
+    }
+
+    &-title {
+        font-family: var(--za-ff-heading);
+        font-size: 68px;
+        font-weight: bold;
+        color: #181E4B;
+        line-height: 1.2;
+    }
+
+    &-text {
+        & p {
+            color: var(--za-cr-text-slateBlue);
+            font-weight: var(--za-fw-medium);
+        }
+    }
+
+    &-btn {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        & .za-btn {
+            @include transition(1s);
+            background-color: var(--za-cr-theme-gldenYellow);
+            border-radius: 10px;
+            font-weight: var(--za-fw-medium);
+            color: var(--za-cr-common-white);
+            padding: 18px 25px;
+
+            &:hover {
+                background-color: transparent;
+                color: #222;
+                border-radius: 5px;
+                border: 2px solid var(--za-cr-theme-terraCotta);
+            }
+        }
+    }
+
+    &-img {
+        & img {
+            width: 650px;
+        }
+    }
+}

@@ -2,9 +2,10 @@
 
 /*--Header Area--*/
 .za-header {
-    &-area{
+    &-area {
         z-index: 99999;
     }
+
     &-row {
         gap: 200px;
     }
@@ -21,15 +22,14 @@
                 gap: 40px;
 
                 & li {
+                    & a {
+                        @include transition(1s);
+                    }
 
                     &:hover {
                         &>a {
-                            color: var(--za-cr-theme-terraCotta);
+                            color: #029bc5;
                         }
-                    }
-
-                    & a {
-                        @include transition(1s);
                     }
                 }
             }
@@ -41,11 +41,11 @@
         gap: 10px;
 
         & .za-btn {
-            @include transition(1s);
+            @include transition(3s);
 
             &:hover {
                 border-radius: 5px;
-                border: 2px solid var(--za-cr-theme-terraCotta);
+                border: 2px solid #029bc5;
             }
 
             &.active {
@@ -63,3 +63,4 @@
         }
     }
 }
+
