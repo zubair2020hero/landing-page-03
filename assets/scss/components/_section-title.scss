@@ -1,26 +1,20 @@
-@use '../helper' as *;
+@use '../helper'as *;
 
 /*****Reuse Class*****/
 
-/*Section tite*/
+/*Section title*/
 
-.za-section-top {
-    font-weight: var(--za-fw-medium);
-}
+.za-section {
+    &-title {
+        font-family: var(--za-ff-heading);
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--za-cr-text-blueCharcoal);
 
-.za-section-title {
-    font-size: 48px;
-    font-weight: var(--za-fw-semiBold);
-    color: var(--za-cr-darkBlue);
-    margin-bottom: 20px;
-
-    @media #{$sm, $md, $od, $lg} {
-        font-size: 35px;
+        &-sub {
+            font-size: 18px;
+            font-weight: var(--za-fw-semiBold);
+            color: var(--za-cr-text-slateBlue);
+        }
     }
 }
-
-.za-section-p {
-    color: var(--za-cr-darkBlue);
-}
-
-
