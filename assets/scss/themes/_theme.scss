@@ -63,6 +63,36 @@ html {
     scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+    font-family: var(--za-ff-heading);
+    color: #222;
+    margin-top: 0;
+    font-weight: bold;
+    line-height: 1;
+}
+
+h1{
+    font-size: var(--za-fs-h1);
+}
+
+h2{
+    font-size: var(--za-fs-h2);
+}
+
+h3{
+    font-size: var(--za-fs-h3);
+}
+
+h4{
+    font-size: var(--za-fs-h4);
+    font-family: var(--za-ff-1);
+}
+
 body {
     background-color: var(--za-cr-white);
     color: var(--za-cr-darkBlue);

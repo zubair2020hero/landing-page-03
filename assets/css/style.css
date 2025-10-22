@@ -44,31 +44,11 @@
   /*Font Size Declaration*/
   --za-fs-body: 16px;
   --za-fs-p: 16px;
-  --za-fs-h1: 54px;
-  --za-fs-h2: 48px;
-  --za-fs-h3: 38px;
-  --za-fs-h4: 36px;
-  --za-fs-h5: 32px;
-  --za-fs-h6: 24px;
+  --za-fs-h1: 68px;
+  --za-fs-h2: 40px;
+  --za-fs-h3: 30px;
+  --za-fs-h4: 20px;
   --za-fs-button: 14px;
-  --za-fs-body-tablet: 13.6px;
-  --za-fs-p-tablet: 13.6px;
-  --za-fs-h1-tablet: 45.9px;
-  --za-fs-h2-tablet: 40.8px;
-  --za-fs-h3-tablet: 32.3px;
-  --za-fs-h4-tablet: 30.6px;
-  --za-fs-h5-tablet: 27.2px;
-  --za-fs-h6-tablet: 20.4px;
-  --za-fs-button-tablet: 11.9px;
-  --za-fs-body-mobile: 11.2px;
-  --za-fs-p-mobile: 11.2px;
-  --za-fs-h1-mobile: 37.8px;
-  --za-fs-h2-mobile: 33.6px;
-  --za-fs-h3-mobile: 26.6px;
-  --za-fs-h4-mobile: 25.2px;
-  --za-fs-h5-mobile: 22.4px;
-  --za-fs-h6-mobile: 16.8px;
-  --za-fs-button-mobile: 9.8px;
 }
 
 /** Spacing Style **/
@@ -3297,9 +3277,6 @@
 /*****Reuse Class*****/
 /*Section title*/
 .za-section-title {
-  font-family: var(--za-ff-heading);
-  font-size: 40px;
-  font-weight: bold;
   color: var(--za-cr-text-blueCharcoal);
 }
 .za-section-title-sub {
@@ -3345,6 +3322,36 @@ button {
 
 html {
   scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+  font-family: var(--za-ff-heading);
+  color: #222;
+  margin-top: 0;
+  font-weight: bold;
+  line-height: 1;
+}
+
+h1 {
+  font-size: var(--za-fs-h1);
+}
+
+h2 {
+  font-size: var(--za-fs-h2);
+}
+
+h3 {
+  font-size: var(--za-fs-h3);
+}
+
+h4 {
+  font-size: var(--za-fs-h4);
+  font-family: var(--za-ff-1);
 }
 
 body {
@@ -3577,9 +3584,6 @@ body {
   color: var(--za-cr-theme-terraCotta);
 }
 .za-hero-title {
-  font-family: var(--za-ff-heading);
-  font-size: 68px;
-  font-weight: bold;
   color: #181E4B;
   line-height: 1.2;
 }
@@ -3617,6 +3621,14 @@ body {
 /*--Category Area--*/
 .za-category-area {
   padding: 120px 0;
+}
+.za-category-row {
+  gap: 30px;
+}
+
+.za-category-item {
+  padding: 25px;
+  background: #f7f7f7;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -27,10 +27,10 @@ $font-weight:(
 // Font Size
 
 // Scaling factors for devices
-$scaling-factor: (
-  tablet: 0.85, // 85% of desktop font size
-  mobile: 0.7   // 70% of desktop font size
-);
+// $scaling-factor: (
+//   tablet: 0.85, // 85% of desktop font size
+//   mobile: 0.7   // 70% of desktop font size
+// );
 
 // Font sizes for elements
 // $font-sizes: (
@@ -48,18 +48,18 @@ $scaling-factor: (
 $font-sizes: (
   body: 16px,  
   p: 16px,    
-  h1: 54px,    
-  h2: 48px,  
-  h3: 38px,    
-  h4: 36px, 
-  h5: 32px, 
-  h6: 24px, 
+  h1: 68px,    
+  h2: 40px,  
+  h3: 30px,    
+  h4: 20px, 
+  // h5: 32px, 
+  // h6: 24px, 
   button: 14px 
 );
 
 // Extract scaling factors
-$tablet-scale: map-get($scaling-factor, tablet);
-$mobile-scale: map-get($scaling-factor, mobile);
+// $tablet-scale: map-get($scaling-factor, tablet);
+// $mobile-scale: map-get($scaling-factor, mobile);
 
 
 

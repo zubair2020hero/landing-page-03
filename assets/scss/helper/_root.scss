@@ -32,13 +32,13 @@
         --za-fs-#{$element}: #{$size};
     }
 
-    // Tablet font sizes
-    @each $element, $size in $font-sizes {
-        --za-fs-#{$element}-tablet: #{$size * $tablet-scale};
-    }
+    // // Tablet font sizes
+    // @each $element, $size in $font-sizes {
+    //     --za-fs-#{$element}-tablet: #{$size * $tablet-scale};
+    // }
 
-    // Mobile font sizes
-    @each $element, $size in $font-sizes {
-        --za-fs-#{$element}-mobile: #{$size * $mobile-scale};
-    }    
+    // // Mobile font sizes
+    // @each $element, $size in $font-sizes {
+    //     --za-fs-#{$element}-mobile: #{$size * $mobile-scale};
+    // }    
 }
