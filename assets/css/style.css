@@ -3620,10 +3620,11 @@ body {
 
 /*--Category Area--*/
 .za-category-area {
-  padding: 120px 0;
+  padding: 104px 0;
 }
 .za-category-row {
   gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .za-category-item {
   z-index: 11;
@@ -3657,5 +3658,13 @@ body {
   -o-transition: all 1s ease-out 0s;
   transition: all 1s ease-out 0s;
 }
+.za-category-text-title {
+  color: #1E1D4C;
+}
+.za-category-text p {
+  color: var(--za-cr-text-slateBlue);
+}
+
+/*--Category Area--*/
 
 /*# sourceMappingURL=style.css.map */
