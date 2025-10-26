@@ -1,3 +1,29 @@
 @use '../helper'as *;
 
-/*--Category Area--*/
+/*--Selling Area--*/
+
+.za-selling {
+    &-area {
+        padding: 104px 0;
+    }
+
+    &-row {
+        gap: 30px;
+        grid-template-columns: repeat(3, 3fr);
+    }
+
+    &-img {
+        & img {
+            border-radius: 24px;
+            width: 100%;
+        }
+    }
+
+    &-text {
+        background-color: var(--za-cr-common-white);
+        width: 100%;
+        bottom: 0px;
+        border-radius: 0 0 24px 24px;
+        padding: 25px 20px 40px 20px;
+    }
+}
