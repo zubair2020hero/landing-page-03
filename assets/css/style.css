@@ -3677,11 +3677,29 @@ body {
   border-radius: 24px;
   width: 100%;
 }
+.za-selling-item {
+  box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.02), 0 64.81px 46.85px 0 rgba(0, 0, 0, 0.0152), 0 38.52px 25.48px 0 rgba(0, 0, 0, 0.0121), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 8.15px 6.52px 0 rgba(0, 0, 0, 0.0079);
+  border-radius: 0 0 24px 24px;
+}
 .za-selling-text {
   background-color: var(--za-cr-common-white);
   width: 100%;
   bottom: 0px;
   border-radius: 0 0 24px 24px;
+  padding: 25px 20px 40px 20px;
+  color: var(--za-cr-text-slateBlue);
+}
+.za-selling-location a {
+  font-size: 18px;
+  font-weight: var(--za-fw-medium);
+}
+.za-selling-price p {
+  font-size: 18px;
+  font-weight: var(--za-fw-medium);
+}
+.za-selling-day span {
+  font-size: 16px;
+  font-weight: var(--za-fw-medium);
 }
 
 /*# sourceMappingURL=style.css.map */
