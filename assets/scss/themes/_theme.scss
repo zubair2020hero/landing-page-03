@@ -76,21 +76,26 @@ h6 {
     line-height: 1;
 }
 
-h1{
+h1 {
     font-size: var(--za-fs-h1);
 }
 
-h2{
+h2 {
     font-size: var(--za-fs-h2);
 }
 
-h3{
+h3 {
     font-size: var(--za-fs-h3);
 }
 
-h4{
+h4 {
     font-size: var(--za-fs-h4);
     font-family: var(--za-ff-1);
+}
+
+h5 {
+    font-size: var(--za-fs-h5);
+    font-family: var(--za-ff-body);
 }
 
 body {
@@ -129,10 +134,15 @@ body {
 
 
 
-//---
+//--- header area
 .za-header-transparent {
     position: absolute;
     top: 40px;
     left: 0;
     right: 0;
+}
+
+//- color
+.za-cool-gray-color{
+    color: var(--za-cr-text-coolGray);
 }

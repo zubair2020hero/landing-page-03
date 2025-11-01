@@ -4,7 +4,7 @@
 
 .za-selling {
     &-area {
-        padding: 104px 0;
+        // padding-top: 104px;
     }
 
     &-row {
@@ -38,24 +38,24 @@
         color: var(--za-cr-text-slateBlue);
     }
 
-    &-location {
-        & a {
-            font-size: 18px;
-            font-weight: var(--za-fw-medium);
-        }
-    }
-
-    &-price {
-        & p {
-            font-size: 18px;
-            font-weight: var(--za-fw-medium);
-        }
-    }
-
+    &-location,
+    &-price,
     &-day {
-        & span {
-            font-size: 16px;
+
+        a,
+        p,
+        span {
             font-weight: var(--za-fw-medium);
         }
     }
+
+    &-location a,
+    &-price p {
+        font-size: 18px;
+    }
+
+    &-day span {
+        font-size: 16px;
+    }
+
 }

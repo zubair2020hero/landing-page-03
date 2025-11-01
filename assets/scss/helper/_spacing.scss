@@ -21,7 +21,7 @@
 }
 
 /*--Padding Top--*/
-@for $z from 1 through 100 {
+@for $z from 1 through 150 {
     .pt-#{1 * $z}{padding-top: 1px * $z;}
 }
 

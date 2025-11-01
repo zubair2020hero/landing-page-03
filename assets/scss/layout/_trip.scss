@@ -1,0 +1,68 @@
+@use '../helper'as *;
+
+/*--trip Area--*/
+
+.za-trip {
+    &-area {
+        // padding-top: 104px;
+    }
+
+    &-row {
+        gap: 230px;
+    }
+
+    &-item {
+        gap: 20px;
+    }
+
+    &-text {
+
+        &-title,
+        p {
+            color: var(--za-cr-text-slateBlue);
+        }
+    }
+
+    &-card {
+        padding: 20px 24px;
+        background-color: white;
+        border-radius: 26px;
+        box-shadow:
+            0 100px 80px 0 rgba(0, 0, 0, 0.02),
+            0 64.81px 46.85px 0 rgba(0, 0, 0, 0.0152),
+            0 38.52px 25.48px 0 rgba(0, 0, 0, 0.0121),
+            0 20px 13px 0 rgba(0, 0, 0, 0.01),
+            0 8.15px 6.52px 0 rgba(0, 0, 0, 0.0079);
+
+        &-text {
+            & span {
+                font-weight: var(--za-fw-medium);
+                color: var(--za-cr-text-coolGray);
+                font-size: 16px;
+            }
+        }
+
+        &-title {
+            font-weight: var(--za-fw-medium);
+            color: var(--za-cr-text-richBlack);
+            font-size: 18px;
+        }
+
+        & p {
+            font-weight: var(--za-fw-medium);
+            color: var(--za-cr-text-coolGray);
+            font-size: 16px;
+        }
+
+        &-icon {
+            gap: 12px;
+
+            & i {
+                padding: 15px;
+                background-color: #F5F5F5;
+                color: 84829A;
+                border-radius: 50px;
+            }
+        }
+    }
+}

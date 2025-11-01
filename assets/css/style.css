@@ -48,6 +48,7 @@
   --za-fs-h2: 40px;
   --za-fs-h3: 30px;
   --za-fs-h4: 20px;
+  --za-fs-h5: 16px;
   --za-fs-button: 14px;
 }
 
@@ -2057,6 +2058,206 @@
   padding-top: 100px;
 }
 
+.pt-101 {
+  padding-top: 101px;
+}
+
+.pt-102 {
+  padding-top: 102px;
+}
+
+.pt-103 {
+  padding-top: 103px;
+}
+
+.pt-104 {
+  padding-top: 104px;
+}
+
+.pt-105 {
+  padding-top: 105px;
+}
+
+.pt-106 {
+  padding-top: 106px;
+}
+
+.pt-107 {
+  padding-top: 107px;
+}
+
+.pt-108 {
+  padding-top: 108px;
+}
+
+.pt-109 {
+  padding-top: 109px;
+}
+
+.pt-110 {
+  padding-top: 110px;
+}
+
+.pt-111 {
+  padding-top: 111px;
+}
+
+.pt-112 {
+  padding-top: 112px;
+}
+
+.pt-113 {
+  padding-top: 113px;
+}
+
+.pt-114 {
+  padding-top: 114px;
+}
+
+.pt-115 {
+  padding-top: 115px;
+}
+
+.pt-116 {
+  padding-top: 116px;
+}
+
+.pt-117 {
+  padding-top: 117px;
+}
+
+.pt-118 {
+  padding-top: 118px;
+}
+
+.pt-119 {
+  padding-top: 119px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pt-121 {
+  padding-top: 121px;
+}
+
+.pt-122 {
+  padding-top: 122px;
+}
+
+.pt-123 {
+  padding-top: 123px;
+}
+
+.pt-124 {
+  padding-top: 124px;
+}
+
+.pt-125 {
+  padding-top: 125px;
+}
+
+.pt-126 {
+  padding-top: 126px;
+}
+
+.pt-127 {
+  padding-top: 127px;
+}
+
+.pt-128 {
+  padding-top: 128px;
+}
+
+.pt-129 {
+  padding-top: 129px;
+}
+
+.pt-130 {
+  padding-top: 130px;
+}
+
+.pt-131 {
+  padding-top: 131px;
+}
+
+.pt-132 {
+  padding-top: 132px;
+}
+
+.pt-133 {
+  padding-top: 133px;
+}
+
+.pt-134 {
+  padding-top: 134px;
+}
+
+.pt-135 {
+  padding-top: 135px;
+}
+
+.pt-136 {
+  padding-top: 136px;
+}
+
+.pt-137 {
+  padding-top: 137px;
+}
+
+.pt-138 {
+  padding-top: 138px;
+}
+
+.pt-139 {
+  padding-top: 139px;
+}
+
+.pt-140 {
+  padding-top: 140px;
+}
+
+.pt-141 {
+  padding-top: 141px;
+}
+
+.pt-142 {
+  padding-top: 142px;
+}
+
+.pt-143 {
+  padding-top: 143px;
+}
+
+.pt-144 {
+  padding-top: 144px;
+}
+
+.pt-145 {
+  padding-top: 145px;
+}
+
+.pt-146 {
+  padding-top: 146px;
+}
+
+.pt-147 {
+  padding-top: 147px;
+}
+
+.pt-148 {
+  padding-top: 148px;
+}
+
+.pt-149 {
+  padding-top: 149px;
+}
+
+.pt-150 {
+  padding-top: 150px;
+}
+
 /*--Padding Bottom--*/
 .pb-1 {
   padding-bottom: 1px;
@@ -3354,6 +3555,11 @@ h4 {
   font-family: var(--za-ff-1);
 }
 
+h5 {
+  font-size: var(--za-fs-h5);
+  font-family: var(--za-ff-body);
+}
+
 body {
   background-color: var(--za-cr-white);
   color: var(--za-cr-darkBlue);
@@ -3389,6 +3595,10 @@ body {
   top: 40px;
   left: 0;
   right: 0;
+}
+
+.za-cool-gray-color {
+  color: var(--za-cr-text-coolGray);
 }
 
 /***** Menu Style *****/
@@ -3619,9 +3829,6 @@ body {
 }
 
 /*--Category Area--*/
-.za-category-area {
-  padding: 104px 0;
-}
 .za-category-row {
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
@@ -3666,9 +3873,6 @@ body {
 }
 
 /*--Selling Area--*/
-.za-selling-area {
-  padding: 104px 0;
-}
 .za-selling-row {
   gap: 30px;
   grid-template-columns: repeat(3, 3fr);
@@ -3689,17 +3893,62 @@ body {
   padding: 25px 20px 40px 20px;
   color: var(--za-cr-text-slateBlue);
 }
-.za-selling-location a {
-  font-size: 18px;
+.za-selling-location a,
+.za-selling-location p,
+.za-selling-location span, .za-selling-price a,
+.za-selling-price p,
+.za-selling-price span, .za-selling-day a,
+.za-selling-day p,
+.za-selling-day span {
   font-weight: var(--za-fw-medium);
 }
-.za-selling-price p {
+.za-selling-location a, .za-selling-price p {
   font-size: 18px;
-  font-weight: var(--za-fw-medium);
 }
 .za-selling-day span {
   font-size: 16px;
+}
+
+/*--trip Area--*/
+.za-trip-row {
+  gap: 230px;
+}
+.za-trip-item {
+  gap: 20px;
+}
+.za-trip-text-title,
+.za-trip-text p {
+  color: var(--za-cr-text-slateBlue);
+}
+.za-trip-card {
+  padding: 20px 24px;
+  background-color: white;
+  border-radius: 26px;
+  box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.02), 0 64.81px 46.85px 0 rgba(0, 0, 0, 0.0152), 0 38.52px 25.48px 0 rgba(0, 0, 0, 0.0121), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 8.15px 6.52px 0 rgba(0, 0, 0, 0.0079);
+}
+.za-trip-card-text span {
   font-weight: var(--za-fw-medium);
+  color: var(--za-cr-text-coolGray);
+  font-size: 16px;
+}
+.za-trip-card-title {
+  font-weight: var(--za-fw-medium);
+  color: var(--za-cr-text-richBlack);
+  font-size: 18px;
+}
+.za-trip-card p {
+  font-weight: var(--za-fw-medium);
+  color: var(--za-cr-text-coolGray);
+  font-size: 16px;
+}
+.za-trip-card-icon {
+  gap: 12px;
+}
+.za-trip-card-icon i {
+  padding: 15px;
+  background-color: #F5F5F5;
+  color: 84829A;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
