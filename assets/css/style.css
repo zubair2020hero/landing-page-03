@@ -3910,8 +3910,12 @@ body {
 }
 
 /*--trip Area--*/
-.za-trip-row {
-  gap: 230px;
+.za-trip-area .za-section-title {
+  font-size: 50px;
+  line-height: 1.2;
+}
+.za-trip-right, .za-trip-left {
+  width: 50%;
 }
 .za-trip-item {
   gap: 20px;
@@ -3921,10 +3925,24 @@ body {
   color: var(--za-cr-text-slateBlue);
 }
 .za-trip-card {
+  width: 370px;
+  z-index: 11;
   padding: 20px 24px;
   background-color: white;
   border-radius: 26px;
   box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.02), 0 64.81px 46.85px 0 rgba(0, 0, 0, 0.0152), 0 38.52px 25.48px 0 rgba(0, 0, 0, 0.0121), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 8.15px 6.52px 0 rgba(0, 0, 0, 0.0079);
+}
+.za-trip-card-shape {
+  z-index: 1;
+  top: -150px;
+  right: -10px;
+}
+.za-trip-card-shape img {
+  width: 554px;
+  height: 567px;
+}
+.za-trip-card-img img {
+  border-radius: 24px;
 }
 .za-trip-card-text span {
   font-weight: var(--za-fw-medium);
@@ -3949,6 +3967,53 @@ body {
   background-color: #F5F5F5;
   color: 84829A;
   border-radius: 50px;
+}
+.za-trip-ongoing {
+  z-index: 111;
+  background: var(--za-cr-common-white);
+  width: 264px;
+  border-radius: 18px;
+  box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.02), 0 64.81px 46.85px 0 rgba(0, 0, 0, 0.0152), 0 38.52px 25.48px 0 rgba(0, 0, 0, 0.0121), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 8.15px 6.52px 0 rgba(0, 0, 0, 0.0079);
+  bottom: 52px;
+  right: 56px;
+  padding: 15px;
+  gap: 15px;
+}
+.za-trip-ongoing-img img {
+  border-radius: 50px;
+}
+.za-trip-ongoing-text p {
+  font-size: 15px;
+  font-weight: var(--za-fw-medium);
+  color: var(--za-cr-text-coolGray);
+}
+.za-trip-ongoing-progress p {
+  margin-bottom: -4px;
+  font-size: 14px;
+  color: #080809;
+}
+.za-trip-ongoing-progress p span {
+  color: #8A79DF;
+}
+.za-trip-ongoing-progress progress {
+  width: 156px;
+  height: 6px;
+  border: none;
+  border-radius: 15px;
+  background-color: #eee;
+  overflow: hidden;
+}
+.za-trip-ongoing-progress progress::-webkit-progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+}
+.za-trip-ongoing-progress progress::-webkit-progress-value {
+  background: #8A79DF;
+  border-radius: 15px;
+}
+.za-trip-ongoing-progress progress::-moz-progress-bar {
+  background: linear-gradient(90deg, #00b4db, #0083b0);
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
