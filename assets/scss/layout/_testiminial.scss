@@ -1,0 +1,35 @@
+@use '../helper'as *;
+
+/*--Testiminial Area--*/
+
+.za-testiminial {
+    &-row {
+        gap: 80px;
+    }
+
+    &-title,
+    &-client {
+        width: 50%;
+    }
+
+    &-client {
+        &-img {
+            width: 68px;
+            height: 68px;
+            top: -35px;
+            left: -35px;
+        }
+    }
+
+    &-item {
+        //width: 42%;
+        padding: 35px;
+        background-color: #fff;
+        // border: 2px solid #000;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}

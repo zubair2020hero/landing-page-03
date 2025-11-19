@@ -143,6 +143,18 @@ body {
 }
 
 //- color
-.za-cool-gray-color{
+.za-cool-gray-color {
     color: var(--za-cr-text-coolGray);
+}
+
+.za-box-shadow {
+    box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.02),
+        0 64.81px 46.85px 0 rgba(0, 0, 0, 0.0152),
+        0 38.52px 25.48px 0 rgba(0, 0, 0, 0.0121),
+        0 20px 13px 0 rgba(0, 0, 0, 0.01),
+        0 8.15px 6.52px 0 rgba(0, 0, 0, 0.0079);
+}
+
+.za-border{
+    border: 2px solid #F7F7F7;
 }
