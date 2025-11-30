@@ -4161,4 +4161,9 @@ body {
   stroke: #ff4500 !important;
 }
 
+/*--Brand Area--*/
+.za-brand-row {
+  gap: 80px;
+}
+
 /*# sourceMappingURL=style.css.map */
