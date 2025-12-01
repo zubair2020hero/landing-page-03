@@ -1,3 +1,80 @@
 @use '../helper'as *;
 
 /*--subscribe Area--*/
+
+
+.za-subscribe {
+    &-row {
+        background-color: rgba(223, 215, 249, 0.2);
+        // background-color: #DFD7F9;
+        // opacity: 0.2;
+        padding: 75px 140px;
+        border-radius: 129px 20px 20px 20px;
+        -webkit-border-radius: 129px 20px 20px 20px;
+        -moz-border-radius: 129px 20px 20px 20px;
+        -ms-border-radius: 129px 20px 20px 20px;
+        -o-border-radius: 129px 20px 20px 20px;
+    }
+
+    &-icon {
+        top: -10px;
+        right: -20px;
+        z-index: 11;
+    }
+
+    &-shape {
+        &-1 {
+            top: 0;
+            right: 0;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        &-2 {
+            left: 0;
+            bottom: 0;
+            opacity: 0.1;
+            z-index: 1;
+        }
+    }
+
+    &-content {
+        z-index: 11;
+
+        & h3 {
+            font-size: 34px;
+            line-height: 1.5;
+            color: #5E6282;
+            font-weight: var(--za-fw-semiBold);
+        }
+    }
+
+    &-input {
+        background: #fff;
+        padding: 20px 30px;
+        gap: 10px;
+        z-index: 11;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        & input {
+            color: #39425D;
+            font-family: var(--za-ff-body);
+            width: 400px;
+        }
+    }
+
+    &-btn {
+        & .za-btn {
+            background-color: var(--za-cr-theme-terraCotta);
+            border-radius: 10px;
+            padding: 20px 50px;
+            font-weight: var(--za-fw-semiBold);
+            font-family: var(--za-ff-1);
+            color: #fff;
+        }
+    }
+}

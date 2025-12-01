@@ -40,7 +40,7 @@
   /* Font Weight Declaration */
   --za-fw-regular: 400;
   --za-fw-medium: 500;
-  --za-fw-semiBold: 700;
+  --za-fw-semiBold: 600;
   /*Font Size Declaration*/
   --za-fs-body: 16px;
   --za-fs-p: 16px;
@@ -4164,6 +4164,115 @@ body {
 /*--Brand Area--*/
 .za-brand-row {
   gap: 80px;
+}
+
+/*--subscribe Area--*/
+.za-subscribe-row {
+  background-color: rgba(223, 215, 249, 0.2);
+  padding: 75px 140px;
+  border-radius: 129px 20px 20px 20px;
+  -webkit-border-radius: 129px 20px 20px 20px;
+  -moz-border-radius: 129px 20px 20px 20px;
+  -ms-border-radius: 129px 20px 20px 20px;
+  -o-border-radius: 129px 20px 20px 20px;
+}
+.za-subscribe-icon {
+  top: -10px;
+  right: -20px;
+  z-index: 11;
+}
+.za-subscribe-shape-1 {
+  top: 0;
+  right: 0;
+  opacity: 0.1;
+  z-index: 1;
+}
+.za-subscribe-shape-2 {
+  left: 0;
+  bottom: 0;
+  opacity: 0.1;
+  z-index: 1;
+}
+.za-subscribe-content {
+  z-index: 11;
+}
+.za-subscribe-content h3 {
+  font-size: 34px;
+  line-height: 1.5;
+  color: #5E6282;
+  font-weight: var(--za-fw-semiBold);
+}
+.za-subscribe-input {
+  background: #fff;
+  padding: 20px 30px;
+  gap: 10px;
+  z-index: 11;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.za-subscribe-input input {
+  color: #39425D;
+  font-family: var(--za-ff-body);
+  width: 400px;
+}
+.za-subscribe-btn .za-btn {
+  background-color: var(--za-cr-theme-terraCotta);
+  border-radius: 10px;
+  padding: 20px 50px;
+  font-weight: var(--za-fw-semiBold);
+  font-family: var(--za-ff-1);
+  color: #fff;
+}
+
+/*--Footer Area--*/
+.za-footer-row {
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  gap: 30px;
+}
+.za-footer-company ul, .za-footer-contact ul, .za-footer-more ul {
+  padding-left: 0;
+  display: grid;
+  gap: 12px;
+}
+.za-footer-company ul li a, .za-footer-contact ul li a, .za-footer-more ul li a {
+  font-size: 16px;
+  color: #5E6282;
+  font-weight: 600;
+}
+.za-footer-company h3, .za-footer-contact h3, .za-footer-more h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.za-footer-about p {
+  font-size: 14px;
+  font-weight: var(--za-fw-medium);
+  color: #5E6282;
+}
+.za-footer-social i {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  align-content: center;
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+.za-footer-social i:hover {
+  background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+  color: #fff;
+}
+.za-footer-app h3 {
+  font-size: 20px;
+  color: #5E6282;
+}
+.za-footer-copyRight {
+  font-size: 14px;
+  color: #5E6282;
 }
 
 /*# sourceMappingURL=style.css.map */
