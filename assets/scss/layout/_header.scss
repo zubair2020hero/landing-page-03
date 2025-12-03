@@ -126,22 +126,26 @@
                     width: 80px;
                     top: 100%;
                     left: -25px;
-                    padding: 5px 26px;
+                    padding: 5px 0;
                     border-radius: 10px;
+                    display: block;                    
                     opacity: 0;
                     visibility: hidden;
                     @include transition(1s);
 
                     & li {
                         display: block;
+                        @include transition(1s);
                         & a {
-                            padding: 8px 0;
+                           padding: 8px 24px;
                             display: block;
+                            width: 100%;
                         }
 
                         &:hover {
                             & a {
-                                color: var(--za-cr-theme-deepTeal);
+                                color: #fff;
+                                background: var(--za-cr-theme-terraCotta);
                             }
                         }
                     }

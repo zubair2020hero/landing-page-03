@@ -3838,8 +3838,9 @@ body {
   width: 80px;
   top: 100%;
   left: -25px;
-  padding: 5px 26px;
+  padding: 5px 0;
   border-radius: 10px;
+  display: block;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 1s ease-out 0s;
@@ -3850,13 +3851,20 @@ body {
 }
 .za-header-language ul li .za-lang-select li {
   display: block;
+  -webkit-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  -ms-transition: all 1s ease-out 0s;
+  -o-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s;
 }
 .za-header-language ul li .za-lang-select li a {
-  padding: 8px 0;
+  padding: 8px 24px;
   display: block;
+  width: 100%;
 }
 .za-header-language ul li .za-lang-select li:hover a {
-  color: var(--za-cr-theme-deepTeal);
+  color: #fff;
+  background: var(--za-cr-theme-terraCotta);
 }
 .za-header-language .za-lang-label {
   font-size: 15px;
