@@ -22,6 +22,8 @@
                 gap: 40px;
 
                 & li {
+                    position: relative;
+
                     & a {
                         @include transition(1s);
                     }
@@ -29,6 +31,56 @@
                     &:hover {
                         &>a {
                             color: #029bc5;
+                        }
+
+                        & .za-sub-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            top: 125%;
+                        }
+                    }
+
+                    & .za-sub-menu {
+                        position: absolute;
+                        background: #fff;
+                        color: #222;
+                        width: 200px;
+                        padding: 10px 0;
+                        left: 0;
+                        top: 110%;
+                        border-radius: 10px;
+                        opacity: 0;
+                        visibility: hidden;
+                        // z-index: 9;
+                        @include transition(1s);
+
+                        & li {
+                            display: block;
+
+                            & a {
+                                padding: 5px 28px;
+                                display: block;
+                            }
+
+                            & .za-sub-menu {
+                                top: 0;
+                                left: 105%;
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+
+                            &:hover {
+                                &>a {
+                                    color: #fff;
+                                    background-color: var(--za-cr-theme-terraCotta);
+                                }
+
+                                &>.za-sub-menu {
+                                    left: 100%;
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
                         }
                     }
                 }
@@ -56,6 +108,47 @@
     }
 
     &-language {
+        & ul {
+            & li {
+                position: relative;
+
+                &:hover {
+                    & .za-lang-select {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 115%;
+                    }
+                }
+
+                & .za-lang-select {
+                    position: absolute;
+                    background: #fff;
+                    width: 80px;
+                    top: 100%;
+                    left: -25px;
+                    padding: 5px 26px;
+                    border-radius: 10px;
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition(1s);
+
+                    & li {
+                        display: block;
+                        & a {
+                            padding: 8px 0;
+                            display: block;
+                        }
+
+                        &:hover {
+                            & a {
+                                color: var(--za-cr-theme-deepTeal);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         & .za-lang {
             &-label {
                 font-size: 15px;
@@ -63,4 +156,3 @@
         }
     }
 }
-

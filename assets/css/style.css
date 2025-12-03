@@ -3610,6 +3610,10 @@ body {
   border: 2px solid #F7F7F7;
 }
 
+.za-border-2 {
+  border: 2px solid var(--za-cr-theme-terraCotta);
+}
+
 /***** Menu Style *****/
 /* mean menu customize */
 .mean-container a.meanmenu-reveal {
@@ -3745,6 +3749,9 @@ body {
 .za-header-mainmune nav ul {
   gap: 40px;
 }
+.za-header-mainmune nav ul li {
+  position: relative;
+}
 .za-header-mainmune nav ul li a {
   -webkit-transition: all 1s ease-out 0s;
   -moz-transition: all 1s ease-out 0s;
@@ -3754,6 +3761,50 @@ body {
 }
 .za-header-mainmune nav ul li:hover > a {
   color: #029bc5;
+}
+.za-header-mainmune nav ul li:hover .za-sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 125%;
+}
+.za-header-mainmune nav ul li .za-sub-menu {
+  position: absolute;
+  background: #fff;
+  color: #222;
+  width: 200px;
+  padding: 10px 0;
+  left: 0;
+  top: 110%;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  -ms-transition: all 1s ease-out 0s;
+  -o-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s;
+}
+.za-header-mainmune nav ul li .za-sub-menu li {
+  display: block;
+}
+.za-header-mainmune nav ul li .za-sub-menu li a {
+  padding: 5px 28px;
+  display: block;
+}
+.za-header-mainmune nav ul li .za-sub-menu li .za-sub-menu {
+  top: 0;
+  left: 105%;
+  opacity: 0;
+  visibility: hidden;
+}
+.za-header-mainmune nav ul li .za-sub-menu li:hover > a {
+  color: #fff;
+  background-color: var(--za-cr-theme-terraCotta);
+}
+.za-header-mainmune nav ul li .za-sub-menu li:hover > .za-sub-menu {
+  left: 100%;
+  opacity: 1;
+  visibility: visible;
 }
 .za-header-btn {
   gap: 10px;
@@ -3772,6 +3823,40 @@ body {
 .za-header-btn .za-btn.active {
   border-radius: 5px;
   border: 2px solid #212832;
+}
+.za-header-language ul li {
+  position: relative;
+}
+.za-header-language ul li:hover .za-lang-select {
+  opacity: 1;
+  visibility: visible;
+  top: 115%;
+}
+.za-header-language ul li .za-lang-select {
+  position: absolute;
+  background: #fff;
+  width: 80px;
+  top: 100%;
+  left: -25px;
+  padding: 5px 26px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  -ms-transition: all 1s ease-out 0s;
+  -o-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s;
+}
+.za-header-language ul li .za-lang-select li {
+  display: block;
+}
+.za-header-language ul li .za-lang-select li a {
+  padding: 8px 0;
+  display: block;
+}
+.za-header-language ul li .za-lang-select li:hover a {
+  color: var(--za-cr-theme-deepTeal);
 }
 .za-header-language .za-lang-label {
   font-size: 15px;
