@@ -115,6 +115,10 @@ body {
 
 .za-container {
     max-width: 1170px;
+
+    @media #{$lg} {
+        max-width: 960px;
+    }
 }
 
 // position
@@ -153,10 +157,10 @@ body {
         0 8.15px 6.52px 0 rgba(0, 0, 0, 0.0079);
 }
 
-.za-border{
+.za-border {
     border: 2px solid #F7F7F7;
 }
 
-.za-border-2{
+.za-border-2 {
     border: 2px solid var(--za-cr-theme-terraCotta);
 }

@@ -6,6 +6,7 @@
         $('.za-btn.active').removeClass('active');
         $(this).addClass('active');
     });
+    // ----------------------------------
 
     // 02. Slider
     // Slide এবং Dot নির্বাচন
@@ -58,7 +59,56 @@
         showSlide(currentIndex);
         $(this).addClass("active-arrow");
     });
+    // ----------------------------------
 
+    // 03. header language 
+    // $(".za-lang-label").click(function () {
+    //     $(".za-lang-select").removeClass("d-none");
+    // }); // এটা আমি চেষ্টা করছিলাম নিজে কিন্তু না পারায় Chat GPT সাহায্য নিলাম। 
+
+    // Dropdown show/hide
+    $(".za-lang-label > a").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation(); // click event bubble বন্ধ করা
+
+        let menu = $(".za-lang-select");
+
+        if (menu.hasClass("d-none")) {
+            menu.removeClass("d-none").hide().slideDown(200);
+        } else {
+            menu.slideUp(200, function () {
+                menu.addClass("d-none");
+            });
+        }
+    });
+
+    // Language select
+    $(".za-lang-select li a").on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation(); // click event bubble বন্ধ করা
+
+        let selectedLang = $(this).text().trim();
+
+        // label এ বসানো (En → Bn → In ইত্যাদি)
+        let label = $(".za-lang-label > a");
+        label.contents().filter(function () {
+            return this.nodeType === 3; // text node
+        })[0].nodeValue = selectedLang + " ";
+
+        // Dropdown hide
+        $(".za-lang-select").slideUp(200, function () {
+            $(this).addClass("d-none");
+        });
+    });
+
+    // Document এ click হলে dropdown hide
+    $(document).on("click", function () {
+        $(".za-lang-select").slideUp(200, function () {
+            $(this).addClass("d-none");
+        });
+    });
+    // ----------------------------------
+    
     // // 01. Mobile Menu
     // $('#mobile-menu').meanmenu({
     //     meanMenuContainer: '.mobile-menu',

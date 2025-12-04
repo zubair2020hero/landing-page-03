@@ -3578,6 +3578,11 @@ body {
 .za-container {
   max-width: 1170px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .za-container {
+    max-width: 960px;
+  }
+}
 
 .p-relative {
   position: relative;
@@ -3743,8 +3748,28 @@ body {
 .za-header-row {
   gap: 200px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .za-header-row {
+    gap: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .za-header-row {
+    gap: 10px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 750px) {
+  .za-header-row {
+    gap: 10px;
+  }
+}
 .za-header-content-box {
   gap: 50px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .za-header-content-box {
+    gap: 16px;
+  }
 }
 .za-header-mainmune nav ul {
   gap: 40px;
@@ -3829,20 +3854,15 @@ body {
 }
 .za-header-language ul li:hover .za-lang-select {
   opacity: 1;
-  visibility: visible;
-  top: 115%;
 }
 .za-header-language ul li .za-lang-select {
   position: absolute;
   background: #fff;
   width: 80px;
-  top: 100%;
+  top: 140%;
   left: -25px;
   padding: 5px 0;
   border-radius: 10px;
-  display: block;
-  opacity: 0;
-  visibility: hidden;
   -webkit-transition: all 1s ease-out 0s;
   -moz-transition: all 1s ease-out 0s;
   -ms-transition: all 1s ease-out 0s;

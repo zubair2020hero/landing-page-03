@@ -8,11 +8,27 @@
 
     &-row {
         gap: 200px;
+
+        @media #{$lg} {
+            gap: 40px;
+        }
+
+        @media #{$sm} {
+            gap: 10px;
+        }
+
+        @media #{$od} {
+            gap: 10px;
+        }
     }
 
     &-content {
         &-box {
             gap: 50px;
+
+            @media #{$lg} {
+                gap: 16px;
+            }
         }
     }
 
@@ -115,8 +131,8 @@
                 &:hover {
                     & .za-lang-select {
                         opacity: 1;
-                        visibility: visible;
-                        top: 115%;
+                        // visibility: visible;
+                        // top: 115%;
                     }
                 }
 
@@ -124,20 +140,21 @@
                     position: absolute;
                     background: #fff;
                     width: 80px;
-                    top: 100%;
+                    top: 140%;
                     left: -25px;
                     padding: 5px 0;
                     border-radius: 10px;
-                    display: block;                    
-                    opacity: 0;
-                    visibility: hidden;
+                    // display: block;                    
+                    // opacity: 0;
+                    // visibility: hidden;
                     @include transition(1s);
 
                     & li {
                         display: block;
                         @include transition(1s);
+
                         & a {
-                           padding: 8px 24px;
+                            padding: 8px 24px;
                             display: block;
                             width: 100%;
                         }
