@@ -1,6 +1,35 @@
 (function ($) {
     "use strict";
 
+    var windowOn = $(window);
+
+    // preloader 
+    windowOn.on('load', function () {
+        $("#loading").fadeOut(500);
+    })
+    //----------
+
+    // back-to-top
+    var btn = $('#back-to-top');
+    windowOn.scroll(function () {
+        if (windowOn.scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+    btn.on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, '300');
+    });
+    //----------
+    // mobile menu
+    let zaMenuHTML = $('.za-mobile-menu-active > ul').clone();
+    let zaoffcanvasMenu = $('.za-offcanvas-menu > nav');
+
+    zaoffcanvasMenu.append(zaMenuHTML);
+    //------------
     // 01. Button
     $('.za-btn').on('click', function () {
         $('.za-btn.active').removeClass('active');
@@ -108,7 +137,7 @@
         });
     });
     // ----------------------------------
-    
+
     // // 01. Mobile Menu
     // $('#mobile-menu').meanmenu({
     //     meanMenuContainer: '.mobile-menu',
