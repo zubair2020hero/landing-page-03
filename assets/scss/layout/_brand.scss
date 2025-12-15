@@ -5,5 +5,14 @@
 .za-brand {
   &-row {
     gap: 80px;
+
+    @media #{$lg} {
+      gap: 40px;
+    }
+
+    @media #{$md} {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
   }
 }

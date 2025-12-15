@@ -9,11 +9,27 @@
         & .za-section-title {
             font-size: 50px;
             line-height: 1.2;
+
+            @media #{$md} {
+                font-size: 40px;
+                width: 128%;
+            }
         }
     }
 
     &-row {
+
         // gap: 230px;
+        @media #{$md} {
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-box {
+        @media #{$md} {
+            flex-grow: 4;
+        }
     }
 
     &-right,
@@ -111,6 +127,10 @@
         padding: 15px;
         gap: 15px;
 
+        @media #{$md} {
+            right: 150px;
+        }
+
         &-img {
             & img {
                 border-radius: 50px;
@@ -130,7 +150,8 @@
                 margin-bottom: -4px;
                 font-size: 14px;
                 color: #080809;
-                & span{
+
+                & span {
                     color: #8A79DF;
                 }
             }
@@ -142,6 +163,7 @@
                 border-radius: 15px;
                 background-color: #eee;
                 overflow: hidden;
+
                 &::-webkit-progress-bar {
                     background-color: #f0f0f0;
                     border-radius: 15px;

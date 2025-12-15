@@ -10,6 +10,10 @@
     &-row {
         gap: 30px;
         grid-template-columns: repeat(3, 3fr);
+
+        @media #{$md} {
+            grid-template-columns: repeat(2, 3fr);
+        }
     }
 
     &-img {

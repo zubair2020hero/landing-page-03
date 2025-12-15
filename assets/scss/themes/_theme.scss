@@ -121,6 +121,12 @@ body {
     }
 }
 
+.container {
+    @media #{$md} {
+        padding: 0 50px;
+    }
+}
+
 // position
 .p-relative {
     position: relative;
@@ -277,22 +283,14 @@ body {
     transition: 0.3s;
     transform: scale(0.7);
     z-index: 11111;
+
+    @media #{$lg} {
+        right: 20px;
+    }
 }
 
 #back-to-top.show {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
-}
-
-// offcanvas Area
-.za-offcanvas{
-    position: fixed;
-    right: 152px;
-    top: 0;
-    padding: 30px 10px;
-    z-index: 99999;
-    width: 400px;
-    background-color: #ccc;
-    overflow-y: scroll;
 }

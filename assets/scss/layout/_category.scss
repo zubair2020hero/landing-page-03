@@ -10,13 +10,17 @@
     &-row {
         gap: 30px;
         grid-template-columns: repeat(4, 1fr);
+
+        @media #{$md} {
+             grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &-item {
         &-box {
             &:hover {
                 & .za-category-hover-shape {
-                    opacity: 1;                   
+                    opacity: 1;
                 }
 
                 & .za-category-item {
@@ -34,7 +38,7 @@
         padding: 25px;
         background: #fff;
         border-radius: 36px;
-        @include transition(1s);   
+        @include transition(1s);
     }
 
     &-hover-shape {
@@ -49,11 +53,12 @@
         @include transition(1s);
     }
 
-    &-text{
-        &-title{
+    &-text {
+        &-title {
             color: #1E1D4C;
         }
-        & p{
+
+        & p {
             color: var(--za-cr-text-slateBlue);
         }
     }

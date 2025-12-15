@@ -7,19 +7,34 @@
         & .za-section-title {
             font-size: 50px;
             line-height: 1.2;
+
+            @media #{$md} {
+                font-size: 36px;
+            }
         }
     }
 
     &-row {
         gap: 80px;
+
+        @media #{$md,$sm,$xs,$od} {}
     }
 
     &-title {
         width: 40%;
+
+        @media #{$md,$sm,$xs,$od} {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &-client {
         width: 60%;
+
+        @media #{$md,$sm,$xs,$od} {
+            width: 100%;
+        }
     }
 
     &-client {
@@ -120,6 +135,16 @@
     margin: 10px 0;
     bottom: 60px;
     left: -498px;
+
+    @media #{$md} {
+        bottom: 35px;
+        left: -365px;
+    }
+
+    @media #{$lg} {
+        left: -420px;
+        bottom: 0;
+    }
 }
 
 .dots span {

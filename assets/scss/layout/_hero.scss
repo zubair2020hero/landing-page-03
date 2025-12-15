@@ -8,6 +8,10 @@
         padding-top: 108px;
         z-index: 9999;
         gap: 8px;
+
+        @media #{$md} {
+            flex-wrap: wrap;
+        }
     }
 
     &-shape {
@@ -31,6 +35,10 @@
         font-size: 20px;
         font-weight: bold;
         color: var(--za-cr-theme-terraCotta);
+
+        @media #{$md} {
+            font-size: 18px;
+        }
     }
 
     &-title {
@@ -39,9 +47,21 @@
         // font-weight: bold;
         color: #181E4B;
         line-height: 1.2;
+
+        @media #{$lg} {
+            font-size: 50px;
+        }
+
+        @media #{$md} {
+            font-size: 40px;
+        }
     }
 
     &-text {
+        @media #{$md} {
+            margin-top: 80px;
+        }
+
         & p {
             color: var(--za-cr-text-slateBlue);
             font-weight: var(--za-fw-medium);
@@ -71,8 +91,22 @@
     }
 
     &-img {
+        @media #{$md} {
+            width: 100%;
+            text-align: center;
+        }
+
         & img {
             width: 650px;
+
+            @media #{$lg} {
+                width: 560px;
+            }
+
+            @media #{$md} {
+                width: 500px;
+                margin-top: 30px;
+            }
         }
     }
 }
