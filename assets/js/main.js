@@ -3,13 +3,13 @@
 
     var windowOn = $(window);
 
-    // preloader 
+    // 01. preloader 
     windowOn.on('load', function () {
         $("#loading").fadeOut(500);
     })
     //----------
 
-    // back-to-top
+    // 02. back-to-top
     var btn = $('#back-to-top');
     windowOn.scroll(function () {
         if (windowOn.scrollTop() > 300) {
@@ -24,81 +24,79 @@
         }, '300');
     });
     //----------
-    // mobile menu
+
+    // 03. mobile menu
     let zaMenuHTML = $('.za-mobile-menu-active > ul').clone();
     let zaoffcanvasMenu = $('.za-offcanvas-menu > nav');
 
     zaoffcanvasMenu.append(zaMenuHTML);
     //------------
-    // 01. Button
+
+    // 04. Button
     $('.za-btn').on('click', function () {
         $('.za-btn.active').removeClass('active');
         $(this).addClass('active');
     });
     // ----------------------------------
 
-    // 02. Slider
-    // Slide এবং Dot নির্বাচন
+    // 05. Slider
+    // Slide and Dot selection
     let slides = $(".testimonial-slide");
     let totalSlides = slides.length;
     let currentIndex = 0;
 
-    // Dots তৈরি
+    // Making Dots
     for (let i = 0; i < totalSlides; i++) {
         $(".dots").append("<span></span>");
     }
 
-    // একটি slide দেখানোর ফাংশন
+    // Function to show a slide
     function showSlide(index) {
-        // সব slide এর active এবং behind ক্লাস সরানো
+        // Remove the active and behind classes of all slides.
         slides.removeClass("active behind");
-        // বর্তমান slide active করা
+        // Make current slide active.
         slides.eq(index).addClass("active");
-        // পরবর্তী slide behind হিসেবে চিহ্নিত করা
+        // Mark the next slide behind
         slides.eq((index + 1) % totalSlides).addClass("behind");
 
         // dots update
         $(".dots span").removeClass("active-dot");
         $(".dots span").eq(index).addClass("active-dot");
 
-        // arrow এর active ক্লাস রিসেট
+        // Reset arrow's active class
         $(".up-btn, .down-btn").removeClass("active-arrow");
     }
 
-    // প্রথম slide দেখানো
+    // Showing the first slide
     showSlide(currentIndex);
 
-    // Auto slide প্রতি 3 সেকেন্ডে
+    // Auto slide every 3 seconds
     setInterval(function () {
         currentIndex = (currentIndex + 1) % totalSlides;
         showSlide(currentIndex);
         $(".down-btn").addClass("active-arrow");
     }, 3000);
 
-    // Down arrow click করলে পরের slide দেখানো
+    // Clicking the down arrow shows the next slide.
     $(".down-btn").click(function () {
         currentIndex = (currentIndex + 1) % totalSlides;
         showSlide(currentIndex);
         $(this).addClass("active-arrow");
     });
 
-    // Up arrow click করলে আগের slide দেখানো
+    // Clicking the up arrow shows the previous slide.
     $(".up-btn").click(function () {
         currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
         showSlide(currentIndex);
         $(this).addClass("active-arrow");
     });
     // ----------------------------------
-
-    // 03. header language 
-    // $(".za-lang-label").click(function () {
-    //     $(".za-lang-select").removeClass("d-none");
-    // }); // এটা আমি চেষ্টা করছিলাম নিজে কিন্তু না পারায় Chat GPT সাহায্য নিলাম। 
-
+ 
+    // 06. header-language
     // Dropdown show/hide
     $(".za-lang-label > a").on("click", function (e) {
         e.preventDefault();
-        e.stopPropagation(); // click event bubble বন্ধ করা
+        e.stopPropagation(); 
 
         let menu = $(".za-lang-select");
 
@@ -114,11 +112,11 @@
     // Language select
     $(".za-lang-select li a").on("click", function (e) {
         e.preventDefault();
-        e.stopPropagation(); // click event bubble বন্ধ করা
+        e.stopPropagation(); // Close click event bubble
 
         let selectedLang = $(this).text().trim();
 
-        // label এ বসানো (En → Bn → In ইত্যাদি)
+        // Placed in label (En → Bn → In etc.)
         let label = $(".za-lang-label > a");
         label.contents().filter(function () {
             return this.nodeType === 3; // text node
@@ -130,58 +128,12 @@
         });
     });
 
-    // Document এ click হলে dropdown hide
+    // When you click on Document, the dropdown hides.
     $(document).on("click", function () {
         $(".za-lang-select").slideUp(200, function () {
             $(this).addClass("d-none");
         });
     });
-    // ----------------------------------
-
-    // // 01. Mobile Menu
-    // $('#mobile-menu').meanmenu({
-    //     meanMenuContainer: '.mobile-menu',
-    //     meanScreenWidth: "1199",
-    //     meanExpand: ['<i class="fa-solid fa-plus"></i>'],
-    // });
-
-    // // 02. Sidebar Js
-    // $(".za-menu-toggle").on("click", function () {
-    //     $(".za-sidebar-menu").addClass("sidebar-opened");
-    //     $(".body-overlay").addClass("opened");
-    // });
-
-    // $(".sidebar-close").on("click", function () {
-    //     $(".za-sidebar-menu").removeClass("sidebar-opened");
-    //     $(".body-overlay").removeClass("opened");
-    // });
-
-    // $(".body-overlay").on("click", function () {
-    //     $(".za-sidebar-menu").removeClass("sidebar-opened");
-    //     $(".body-overlay").removeClass("opened");
-    // });
-
-    // // 03. Testimonial
-    // $('.testimonial-active').slick({
-    //     // dots: true,
-    //     infinite: true,
-    //     speed: 300,
-    //     slidesToShow: 1,
-    //     adaptiveHeight: true,
-    //     prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-angle-left"></i></button>',
-    //     nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>',
-    // });
-
-    // //04. Faq
-    // $(".za-faq-text li").on("click", function (e) {
-    //     let clickedLi;
-    //     if ($(e.target).hasClass("za-question-arrow")) {
-    //         clickedLi = $(e.target).parent();
-    //     } else {
-    //         clickedLi = $(e.target).closest("li");
-    //     }
-    //     $(".za-faq-text li").not(clickedLi).removeClass("showAnswer");
-    //     clickedLi.toggleClass("showAnswer");
-    // });
+    // ----------------------------------  
 
 })(jQuery);

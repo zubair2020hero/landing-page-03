@@ -5,22 +5,12 @@
 .za-banner {
   &-area {
     background: linear-gradient(180deg, #E0DEF7 0%, rgba(224, 222, 247, 0.00) 100%);
-    // width: 100%;
-    // height: 600px;        
   }
 
   &-img {
     background-size: 670px;
     background-repeat: no-repeat;
     background-position: right bottom;
-
-    // @media #{$xxl} {
-    //   background-size: 654px;
-    // }
-
-    // @media #{$xxxl} {
-    //   background-size: 754px;
-    // }
   }
 
   &-content {
@@ -42,7 +32,7 @@
   }
 
   &-tab {
-   
+
     & .za-nav-tabs {
       width: 297px;
       background-color: var(--za-cr-common-white);
@@ -69,20 +59,7 @@
       border-radius: 0px 8px 8px 8px;
       width: 72%;
       position: relative;
-      // @media #{$xxxl} {
-      //   width: 72%;
-      // }
-      & .za-tab-pane {
-        // position: relative;
-        // &::before{
-        //   position: absolute;
-        //   content: "";
-        //   width: 3px;
-        //   height: 10px;
-        //   background-color: green;
-        // }
-        // background-color: var(--za-cr-common-purple);
-      }
+
       & .tab-line {
         position: absolute;
         width: 2px;
@@ -91,6 +68,7 @@
         top: 30%;
         left: 30%;
       }
+
       & .tab-line2 {
         position: absolute;
         width: 2px;
@@ -100,14 +78,8 @@
         left: 66%;
       }
     }
-    
-    //-- location
-    & .za-location {
-      // border-right: 1px solid #E0DEF7;
-    }
 
     & .za-select-wrapper {
-      // width: 370px;
       width: 100%;
       position: relative;
 
@@ -198,7 +170,6 @@
     & .za-datepicker {
       display: flex;
       flex-direction: column;
-      // border-right: 1px solid #E0DEF7;
     }
 
     // DatePicker Container 
@@ -227,7 +198,6 @@
       position: absolute;
       top: 44px;
       left: 0;
-      // width: 250px;
       background-color: white;
       border-radius: 5px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -326,7 +296,6 @@
     top: 200px;
     left: 680px;
     width: 270px;
-    // height: 285px;
     background-color: #fff;
     border-radius: 8px;
     padding: 24px;

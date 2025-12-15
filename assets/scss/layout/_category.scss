@@ -3,16 +3,12 @@
 /*--Category Area--*/
 
 .za-category {
-    &-area {
-        // padding-top: 104px;
-    }
-
     &-row {
         gap: 30px;
         grid-template-columns: repeat(4, 1fr);
 
         @media #{$md} {
-             grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 

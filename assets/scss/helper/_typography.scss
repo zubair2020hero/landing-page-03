@@ -26,25 +26,6 @@ $font-weight:(
 
 // Font Size
 
-// Scaling factors for devices
-// $scaling-factor: (
-//   tablet: 0.85, // 85% of desktop font size
-//   mobile: 0.7   // 70% of desktop font size
-// );
-
-// Font sizes for elements
-// $font-sizes: (
-//   body: 1rem,
-//   p: 1rem,
-//   h1: 3rem,
-//   h2: 2.5rem,
-//   h3: 2rem,
-//   h4: 1.75rem,
-//   h5: 1.5rem,
-//   h6: 1.25rem,
-//   button: 1rem
-// );
-
 $font-sizes: (
   body: 16px,  
   p: 16px,    
@@ -53,13 +34,10 @@ $font-sizes: (
   h3: 30px,    
   h4: 20px, 
   h5: 16px, 
-  // h6: 24px, 
   button: 14px 
 );
 
-// Extract scaling factors
-// $tablet-scale: map-get($scaling-factor, tablet);
-// $mobile-scale: map-get($scaling-factor, mobile);
+
 
 
 

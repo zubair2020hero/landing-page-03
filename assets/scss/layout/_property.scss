@@ -9,7 +9,6 @@
     }
 
     &-content {
-        & .za-tab-content {}
 
         & .za-nav-pills {
             padding: 8px;
@@ -128,8 +127,6 @@
                                 opacity: 0.5;
                             }
                         }
-
-                        & a {}
                     }
 
                     & h4 {

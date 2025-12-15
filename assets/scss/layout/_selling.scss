@@ -3,10 +3,6 @@
 /*--Selling Area--*/
 
 .za-selling {
-    &-area {
-        // padding-top: 104px;
-    }
-
     &-row {
         gap: 30px;
         grid-template-columns: repeat(3, 3fr);
